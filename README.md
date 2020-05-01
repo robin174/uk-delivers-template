@@ -1,32 +1,65 @@
-Reigate Delivers is a simple directory of independent businesses offering local delivery. Enabling people to stay at home and save lives, while keeping our high streets alive.
+**Welcome to UK Delivers.**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+UK Delivers is a simple directory of independent businesses offering local delivery. Enabling people to stay at home and save lives, while keeping our high streets alive.
 
-## Installation
+This project was originally bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Fork this project, rename it to match your town or neighbourhood, get set up on Netlify, and link Netlify to the forked repository.
+_Credit Rob Hough._
 
-Lots of code will need editing - you'll need to change the email sign-up form to be your own Mailchimp account, among other changes. Please also change the colour scheme on the favicons and headers - or create your own.
+# Accounts required
 
-Once your site is up and running you'll be able to log in to the CMS via /admin/index.html.
+There are four accounts required to get a UK Delivers wite online.
 
-You'll need a Cloudinary account - this is the CDN that the images are hosted on.
+* [Airtable](https://airtable.com) - For your database and listing form
+* [Netlify](https://www.netlify.com) - For deployment
+* [MailChimp](https://mailchimp.com) - For email sign-ups
+* [Cloudinary](https://cloudinary.com) - For hosting images on a Content Delivery Network (CDN)
 
-##Netlify
+A domain is also required. We recommend a '.com' URL for this.
 
-##Signup to CMS
-In order to access the CMS - you need to connect enable xxx under 'xxx'.
+# Brand
 
-Once enabled, sign-up here: 
+The design of each individual site is up to the owner and you will need to pick two hexadecimal values for your site. The base background blue is #0B132B.
 
-Takes a little time for the email confirmation to come through.
+_For reference, Reigate Delivers:_
 
-##Additional
+* _Pink: #E20C5E_
+* _Yellow: #FFB600_
 
-### Brand Colours
-For Reigate Delivers:
+###Artwork generation
 
-- Pink: #e20c5e
-- Yellow: #ffb600
+For help with generating the necessary artwork files - please email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com)
 
-_For reference, background blue: #0B132B_
+# Stage 01 - Local
+
+**To start, let's get a base version of the site live on your computer.**
+
+###Github
+
+###Local setup
+
+
+# Stage 02 - Online
+
+**Once the app is available on localhost, let's get it online.**
+
+###Upload to GitHub
+
+###Connect to Netlify
+
+###Connect Cloudinary
+
+###Connect MailChimp
+
+
+
+
+
+
+
+
+
+
+
+
+
