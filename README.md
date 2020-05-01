@@ -26,7 +26,7 @@ _For reference, Reigate Delivers:_
 * _Pink: #E20C5E_
 * _Yellow: #FFB600_
 
-###Artwork generation
+### Artwork generation
 
 For help with generating the necessary artwork files - please email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com)
 
@@ -34,22 +34,22 @@ For help with generating the necessary artwork files - please email [robin@reiga
 
 **To start, let's get a base version of the site live on your computer.**
 
-###Github
+### Github
 
-###Local setup
+### Local setup
 
 
 # Stage 02 - Online
 
 **Once the app is available on localhost, let's get it online.**
 
-###Upload to GitHub
+### Upload to GitHub
 
-###Connect to Netlify
+### Connect to Netlify
 
-###Connect Cloudinary
+### Connect Cloudinary
 
-###Connect MailChimp
+### Connect MailChimp
 
 
 
