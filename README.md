@@ -6,9 +6,15 @@ This project was originally bootstrapped with [Create React App](https://github.
 
 _Credit Rob Hough._
 
+For reference, there are currently three versions available on GitHub:
+
+* Deal Delivers: [https://github.com/heymynameisrob/deal-delivers-app](https://github.com/heymynameisrob/deal-delivers-app)
+* Dulwich Delivers: [https://github.com/tomszekeres/dulwich-delivers-app](https://github.com/tomszekeres/dulwich-delivers-app)
+* Reigate Delivers: [https://github.com/robin174/reigate-delivers-app](https://github.com/robin174/reigate-delivers-app)
+
 # Accounts required
 
-There are four accounts required to get a UK Delivers wite online.
+There are four accounts required to get a UK Delivers app online.
 
 * [Airtable](https://airtable.com) - For your database and listing form
 * [Netlify](https://www.netlify.com) - For deployment
@@ -19,29 +25,46 @@ A domain is also required. We recommend a '.com' URL for this.
 
 # Brand
 
-The design of each individual site is up to the owner and you will need to pick two hexadecimal values for your site. The base background blue is #0B132B.
+The design of each individual site is up to the owner and you will need to pick two hexadecimal values for your site; one for the large triangle and one for the smller triangle. The base background blue is #0B132B.
 
-_For reference, Reigate Delivers:_
-
-* _Pink: #E20C5E_
-* _Yellow: #FFB600_
+_For reference, Reigate Delivers: Pink #E20C5E, Yellow #FFB600._
 
 ### Artwork generation
 
-For help with generating the necessary artwork files - please email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com)
+For help with generating the necessary artwork files - please email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com).
+
+___
 
 # Stage 01 - Local
 
-**To start, let's get a base version of the site live on your computer.**
+**To start, let's get a base version of the site live locally.**
 
-### Github
+### GitHub
+Download or clone the repository. 
 
-### Local setup
+To get started you will need [Node.js](https://nodejs.org) installed on your computer. You have a choice of [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com) as your package manager.
 
+Using the terminal, navigate to your app folder.
+
+#### Via npm
+`npm install` to install the necessary Node modules. 
+
+`npm start` to start the server, available at `http://localhost:3000/`.
+
+#### Via Yarn
+`yarn install` to install the necessary Node modules
+
+`yarn start` to start the server, available at `http://localhost:3000/`.
+
+***NB. I had to update my version of Node. To update Node on Mac/Catalina:***
+
+`nvm install node`
+
+___
 
 # Stage 02 - Online
 
-**Once the app is available on localhost, let's get it online.**
+**Once the app is available locally, let's get it online.**
 
 ### Upload to GitHub
 
@@ -49,7 +72,11 @@ For help with generating the necessary artwork files - please email [robin@reiga
 
 ### Connect Cloudinary
 
+Update Cloudinary credentials in `public` - `admin` - `config.yml`
+
 ### Connect MailChimp
+
+Update link to MailChimp list in `src` - `App.js`
 
 
 
