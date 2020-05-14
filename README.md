@@ -12,6 +12,8 @@ For reference, there are currently three versions available on GitHub:
 * Dulwich Delivers: [https://github.com/tomszekeres/dulwich-delivers-app](https://github.com/tomszekeres/dulwich-delivers-app)
 * Reigate Delivers: [https://github.com/robin174/reigate-delivers-app](https://github.com/robin174/reigate-delivers-app)
 
+If you plan to create your own local directory using our template - please get in touch [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com).
+
 # Accounts required
 
 There are four accounts required to get a UK Delivers app online.
@@ -40,11 +42,13 @@ ___
 **To start, let's get a base version of the site live locally.**
 
 ## Download template
-Navigate to your local folder.Download and initialize git, or clone the repository. 
+Create a local folder for your app to live. You have two options with GitHub, either clone the repo (using the terminal) or download the Zip folder direct from the GitHub).
+
+*To add: clone repo process...*
 
 To get started you will need [Node.js](https://nodejs.org). You have a choice of package managers: [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com).
 
-Using the terminal, navigate to your app folder.
+Using the terminal, navigate to your app folder to start a local version of the app.
 
 ##### Via npm
 `npm install` to install the necessary Node modules. 
@@ -82,6 +86,10 @@ ___
 **Once the app is available locally, let's get it online.**
 
 ## Upload template to GitHub
+Create a new repository on your GitHub account.
+
+*To add: upload process...*
+
 For the purposes of speed, we are currently working directly off `master`. Feel free to use a branch.
 
 ##### .gitignore
