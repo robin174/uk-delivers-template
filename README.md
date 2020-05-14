@@ -42,16 +42,18 @@ ___
 ### GitHub
 Download or clone the repository. 
 
-To get started you will need [Node.js](https://nodejs.org) installed on your computer. You have a choice of [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com) as your package manager.
+To get started you will need [Node.js](https://nodejs.org). You have a choice of package managers: [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com).
 
 Using the terminal, navigate to your app folder.
 
-#### Via npm
+##### Via npm
 `npm install` to install the necessary Node modules. 
 
 `npm start` to start the server, available at `http://localhost:3000/`.
 
-#### Via Yarn
+**OR**
+
+##### Via Yarn
 `yarn install` to install the necessary Node modules
 
 `yarn start` to start the server, available at `http://localhost:3000/`.
@@ -60,6 +62,10 @@ Using the terminal, navigate to your app folder.
 
 `nvm install node`
 
+### Customisation
+Time to run through the files in the repo and update to your specific location. If you'd like to build on what we have created - go for it.
+
+
 ___
 
 # Stage 02 - Online
@@ -67,19 +73,26 @@ ___
 **Once the app is available locally, let's get it online.**
 
 ### Upload to GitHub
+For the purposes of speed, we are currently working directly off `master`. Feel free to use a branch. 
 
 ### Connect to Netlify
+With a Netlify account created, let's get Netlify connected to your repository.
+
+
 
 ### Connect Cloudinary
+Cloudinary is currently the CDN we have in place to store the images used for each listing header.
 
 Update Cloudinary credentials in `public` - `admin` - `config.yml`
+
+***NB. I found that Cloudinary did not play nicely with Safari browser (The `insert` option did not appear).***
 
 ### Connect MailChimp
 
 Update link to MailChimp list in `src` - `App.js`
 
 
-
+Once live, please feel free to email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com) to let us all know your directory is live.
 
 
 
