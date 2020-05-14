@@ -88,7 +88,7 @@ For the purposes of speed, we are currently working directly off `master`. Feel 
 ####.gitignore
 A `.gitignore` file should be included in your repo. If not, make sure you have one in place, otherwise `node_modules` will be uploaded to your repo.
 
-To create a new file:
+To create a new file: 
 
 `touch .gitignore`
 
