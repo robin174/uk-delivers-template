@@ -109,9 +109,17 @@ Select your `Owner` and `Branch to deploy` and define your `Basic build settings
 
 Click `Deploy site`.
 
-An initial `Site deploy` will start. Takes a minute or so to deploy. Once deployed, a Netlfiy subdomain will be generated. Visit the subdomain to verify all ok with the deployment.
+An initial deployment will start. Takes a minute or so to complete. Once deployed, a Netlify subdomain will be generated. Visit the subdomain to verify all ok with the deployment.
 
-You can revisit your deployments at any time from `Deploys` in the Netlify admin. 
+You can revisit your deployments at any time from `Deploys` in the Netlify admin.
+
+### Custom domains
+
+To activate your live domain, visit `Settings` - `Domain management` or click `Domain settings` from the `Overview` panel. Click `Add custom domain`.
+
+### HTTPS
+
+A custom domain is required before you enable a TLS certificate.
 
 ## Connect Cloudinary to template
 Cloudinary is currently the CDN we have in place to store the images used for each listing header.
