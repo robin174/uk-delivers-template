@@ -40,7 +40,7 @@ ___
 **To start, let's get a base version of the site live locally.**
 
 ### GitHub
-Download or clone the repository. 
+Navigate to your local folder.Download and initialize git, or clone the repository. 
 
 To get started you will need [Node.js](https://nodejs.org). You have a choice of package managers: [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com).
 
@@ -58,9 +58,18 @@ Using the terminal, navigate to your app folder.
 
 `yarn start` to start the server, available at `http://localhost:3000/`.
 
-***NB. I had to update my version of Node. To update Node on Mac/Catalina:***
+***NB. I had to update my version of Node.js - to update on Mac/Catalina:***
 
 `nvm install node`
+
+Once installation is complete, launch the app locally via:
+
+`npm start` or `yarn start`
+
+A local version of your site shoudl be available: 
+
+`http://localhost:3000/`
+
 
 ### Customisation
 Time to run through the files in the repo and update to your specific location. If you'd like to build on what we have created - go for it.
@@ -73,7 +82,18 @@ ___
 **Once the app is available locally, let's get it online.**
 
 ### Upload to GitHub
-For the purposes of speed, we are currently working directly off `master`. Feel free to use a branch. 
+For the purposes of speed, we are currently working directly off `master`. Feel free to use a branch.
+
+
+####.gitignore
+A `.gitignore` file should be included in your repo. If not, make sure you have one in place, otherwise `node_modules` will be uploaded to your repo.
+
+To create a new file:
+
+`touch .gitignore`
+
+And add `/node_modules` as your first entry. `Save`.
+
 
 ### Connect to Netlify
 With a Netlify account created, let's get Netlify connected to your repository.
