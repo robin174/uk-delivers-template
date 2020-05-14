@@ -25,7 +25,7 @@ A domain is also required. We recommend a '.com' URL for this.
 
 # Brand
 
-The design of each individual site is up to the owner and you will need to pick two hexadecimal values for your site; one for the large triangle and one for the smller triangle. The base background blue is #0B132B.
+The design of each individual site is up to the owner and you will need to pick two hexadecimal values for your site; one for the large triangle and one for the smaller triangle. The base background blue is #0B132B.
 
 _For reference, Reigate Delivers: Pink #E20C5E, Yellow #FFB600._
 
