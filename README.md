@@ -29,7 +29,7 @@ The design of each individual site is up to the owner and you will need to pick 
 
 _For reference, Reigate Delivers: Pink #E20C5E, Yellow #FFB600._
 
-### Artwork generation
+## Artwork generation
 
 For help with generating the necessary artwork files - please email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com).
 
@@ -39,7 +39,7 @@ ___
 
 **To start, let's get a base version of the site live locally.**
 
-### GitHub
+## Download template
 Navigate to your local folder.Download and initialize git, or clone the repository. 
 
 To get started you will need [Node.js](https://nodejs.org). You have a choice of package managers: [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com).
@@ -81,11 +81,10 @@ ___
 
 **Once the app is available locally, let's get it online.**
 
-### Upload to GitHub
+## Upload template to GitHub
 For the purposes of speed, we are currently working directly off `master`. Feel free to use a branch.
 
-
-####.gitignore
+##### .gitignore
 A `.gitignore` file should be included in your repo. If not, make sure you have one in place, otherwise `node_modules` will be uploaded to your repo.
 
 To create a new file: 
@@ -94,20 +93,34 @@ To create a new file:
 
 And add `/node_modules` as your first entry. `Save`.
 
-
-### Connect to Netlify
+## Connect GitHub repo to Netlify
 With a Netlify account created, let's get Netlify connected to your repository.
 
+From Netify dashboard, visit `Sites` and click 'New site from `Git`.
 
+Select your Git Provider: `GitHub`.
 
-### Connect Cloudinary
+Connect to your respective GitHub account and select repository.
+
+Select your `Owner` and `Branch to deploy` and define your `Basic build settings`. For me these are: 
+ 
+* Build command: `yarn build`
+* Publish directory: `build/`
+
+Click `Deploy site`.
+
+An initial `Site deploy` will start. Takes a minute or so to deploy. Once deployed, a Netlfiy subdomain will be generated. Visit the subdomain to verify all ok with the deployment.
+
+You can revisit your deployments at any time from `Deploys` in the Netlify admin. 
+
+## Connect Cloudinary to template
 Cloudinary is currently the CDN we have in place to store the images used for each listing header.
 
 Update Cloudinary credentials in `public` - `admin` - `config.yml`
 
 ***NB. I found that Cloudinary did not play nicely with Safari browser (The `insert` option did not appear).***
 
-### Connect MailChimp
+## Connect MailChimp to template
 
 Update link to MailChimp list in `src` - `App.js`
 
