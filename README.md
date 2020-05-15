@@ -1,4 +1,4 @@
-**Welcome to UK Delivers.**
+# Welcome to UK Delivers
 
 UK Delivers is a simple directory of independent businesses offering local delivery. Enabling people to stay at home and save lives, while keeping our high streets alive.
 
@@ -14,7 +14,7 @@ For reference, there are currently three versions available on GitHub:
 
 If you plan to create your own local directory using our template - please get in touch [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com).
 
-# Accounts required
+### Accounts required
 
 There are four accounts required to get a UK Delivers app online.
 
@@ -25,13 +25,13 @@ There are four accounts required to get a UK Delivers app online.
 
 A domain is also required. We recommend a '.com' URL for this.
 
-# Brand
+### Brand
 
 The design of each individual site is up to the owner and you will need to pick two hexadecimal values for your site; one for the large triangle and one for the smaller triangle. The base background blue is #0B132B.
 
 _For reference, Reigate Delivers: Pink #E20C5E, Yellow #FFB600._
 
-## Artwork generation
+### Artwork generation
 
 For help with generating the necessary artwork files - please email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com).
 
@@ -39,7 +39,7 @@ ___
 
 # Stage 01 - Local
 
-**To start, let's get a base version of the site live locally.**
+**To start, let's get a base version of the app live locally.**
 
 ## Download template
 Create a local folder for your app to live. You have two options with GitHub, either clone the repo (using the terminal) or download the Zip folder direct from the GitHub).
@@ -129,8 +129,54 @@ To activate your live domain, visit `Settings` - `Domain management` or click `D
 
 A custom domain is required before you enable a TLS certificate.
 
+### Netlify CMS
+
+To start adding live content to your app, we need to link the app to Netlify Content Management System.
+
+The `admin` is accessed from your live domain:
+
+e.g. `https://reigatedelivers.com/admin`
+
+The page will ask you to `Login with Netlify Identity`.
+
+The first time you click the button the following message appears:
+
+`Unable to access identity settings. When using git-gateway backend make sure to enable Identity service and Git Gateway.`
+
+In order to enable `Identity service` and `Git Gateway` - revist Netlify.
+
+From the `Identity` tab in the admin, click `Enable Identity`.
+
+Once enabled revisit the `admin` page of your app, give it a refresh, click `Login with Netlify Identity` and `Signup`.
+
+Visit your email and click `Confirm you email address`.
+
+#### Git Gateway
+
+You will also need to also configure Git Gateway. You may receive the following message when you try to login to Netlify CMS:
+
+`Your Git Gateway backend is not returning valid settings. Please make sure it is enabled.`
+
+From the `Settings` tab in Netlify, click `Identity` and scroll down to `Services` and click `Enable Git Gateway`.
+
+`Edit settings` and `generate access token in GitHub`. `Save`.
+
+At the same time, click the `Identity` tab and all being well, your email address should be listed as a `User`.
+
+*NB. Sometimes this part of the process can be a bit temperamental. I found closing all instances of the live app in the browser, redeploying the app from Netlify and launching a fresh version helps.*
+
+If you visit the `/admin` of the app, it should automatically log you in if you've added your username and password.
+
+More information about `Netlify Identity` can be found from their extensive documentation: [Netlify Docs](https://docs.netlify.com/visitor-access/identity/).
+
+You can now start to add/edit/delete the necessary entries for your app.
+
+### Cloudinary
+With access to Netlify CMS, you'll see you can add `Media` to the CMS. This won't work until you have connected your Cloudinary account to the codebase.
+
+
 ## Connect Cloudinary to template
-Cloudinary is currently the CDN we have in place to store the images used for each listing header.
+Cloudinary is currently the CDN ofchoice for Netlify CMS. We use it to store the images used for each listing header.
 
 Update Cloudinary credentials in `public` - `admin` - `config.yml`
 
@@ -143,6 +189,15 @@ Update link to MailChimp list in `src` - `App.js`
 
 Once live, please feel free to email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com) to let us all know your directory is live.
 
+## Resources
+
+I found the following websites super useful when working on this project:
+
+* Create React App: [www.create-react-app.de](https://create-react-app.dev)
+* Create React App docs: [www.create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)
+* Netlify docs: [www.docs.netlify.com/](https://docs.netlify.com/).
+* Netlify CMS docs: [www.netlifycms.org/docs/](https://www.netlifycms.org/docs/)
+* Netlify CMS + React Starter: [www.netlify-cms-react-starter.netlify.app](https://netlify-cms-react-starter.netlify.app)
 
 
 
