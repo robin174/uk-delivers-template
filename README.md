@@ -153,11 +153,8 @@ To start adding live content to your app, we need to link the app to Netlify Con
 
 - The page will ask you to `Login with Netlify Identity`.
 
-- The first time you click the button the following message appears: `
-
-```
-Unable to access identity settings. When using git-gateway backend make sure to enable Identity service and Git Gateway.
-```
+- The first time you click the button the following message appears:  
+	*'Unable to access identity settings. When using git-gateway backend make sure to enable Identity service and Git Gateway.'*
 
 - In order to enable `Identity service` and `Git Gateway` - revist Netlify.
 
@@ -169,11 +166,9 @@ Unable to access identity settings. When using git-gateway backend make sure to 
 
 #### Git Gateway
 
-You will also need to also configure Git Gateway. You may receive the following message when you try to login to Netlify CMS: 
+You will also need to also configure Git Gateway. You may receive the following message when you try to login to Netlify CMS:  
+*'Your Git Gateway backend is not returning valid settings. Please make sure it is enabled.'*
 
-```
-Your Git Gateway backend is not returning valid settings. Please make sure it is enabled.
-```
 
 - From the `Settings` tab in Netlify, click `Identity` and scroll down to `Services` and click `Enable Git Gateway`.
 
