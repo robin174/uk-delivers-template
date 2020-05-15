@@ -176,7 +176,9 @@ You will also need to also configure Git Gateway. You may receive the following 
 
 - At the same time, click the `Identity` tab and all being well, your email address should be listed as a `User`.
 
-*NB. Sometimes this part of the process can be a bit temperamental. I found closing all instances of the live app in the browser, redeploying the app from Netlify and launching a fresh version helps.*
+
+***NB. Sometimes this part of the process can be a bit temperamental. I found closing all instances of the live app in the browser, redeploying the app from Netlify and launching a fresh version helps.***
+
 
 If you visit the `/admin` of the app, it should automatically log you in if you've added your username and password.
 
