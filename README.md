@@ -39,7 +39,7 @@ ___
 
 # Stage 01 - Local
 
-**To start, let's get a base version of the app live locally.**
+To start, let's get a base version of the app live locally.
 
 ## Download template
 Create a local folder for your app to live. You have two options with GitHub, either clone the repo (using the terminal) or download the Zip folder direct from the GitHub).
@@ -54,6 +54,7 @@ Using the terminal, navigate to your app folder to start a local version of the 
 To install the necessary Node modules:
 
 ```
+cd app
 npm install
 ```
 
@@ -70,6 +71,7 @@ http://localhost:3000/
 To install the necessary Node modules:
 
 ```
+cd app
 yarn install
 ```
 
@@ -86,14 +88,14 @@ http://localhost:3000/
 nvm install node
 ```
 
-### Customisation
+## Customisation
 Time to run through the files in the repo and update to your specific location. If you'd like to build on what we have created - go for it.
 
 ___
 
 # Stage 02 - Online
 
-**Once the app is available locally, let's get it online.**
+Once the app is available locally, let's get it online.
 
 ## Upload template to GitHub
 Create a new repository on your GitHub account.
@@ -107,25 +109,27 @@ A `.gitignore` file should be included in your repo. If not, make sure you have 
 
 To create a new file: 
 
-`touch .gitignore`
+```
+touch .gitignore
+```
 
 And add `/node_modules` as your first entry. `Save`.
 
 ## Connect GitHub repo to Netlify
 With a Netlify account created, let's get Netlify connected to your repository.
 
-From Netify dashboard, visit `Sites` and click 'New site from `Git`.
+- From Netify dashboard, visit `Sites` and click `New site from Git`
 
-Select your Git Provider: `GitHub`.
+- Select your Git Provider: `GitHub`
 
-Connect to your respective GitHub account and select repository.
+- Connect to your respective GitHub account and select repository
 
-Select your `Owner` and `Branch to deploy` and define your `Basic build settings`. For me these are: 
+- Select your `Owner` and `Branch to deploy` and define your `Basic build settings`. For me these are:
  
-* Build command: `yarn build`
-* Publish directory: `build/`
+	* Build command: `yarn build`
+	* Publish directory: `build/`
 
-Click `Deploy site`.
+- Click `Deploy site`
 
 An initial deployment will start. Takes a minute or so to complete. Once deployed, a Netlify subdomain will be generated. Visit the subdomain to verify all ok with the deployment.
 
@@ -133,7 +137,9 @@ You can revisit your deployments at any time from `Deploys` in the Netlify admin
 
 ### Custom domains
 
-To activate your live domain, visit `Settings` - `Domain management` or click `Domain settings` from the `Overview` panel. Click `Add custom domain`.
+To activate your live domain, visit `Settings` - `Domain management` or click `Domain settings` from the `Overview` panel. 
+
+Click `Add custom domain`.
 
 ### HTTPS
 
@@ -143,23 +149,19 @@ A custom domain is required before you enable a TLS certificate.
 
 To start adding live content to your app, we need to link the app to Netlify Content Management System.
 
-The `admin` is accessed from your live domain:
+- The `admin` is accessed from your live domain: e.g. `https://reigatedelivers.com/admin`
 
-e.g. `https://reigatedelivers.com/admin`
+- The page will ask you to `Login with Netlify Identity`.
 
-The page will ask you to `Login with Netlify Identity`.
+- The first time you click the button the following message appears: `Unable to access identity settings. When using git-gateway backend make sure to enable Identity service and Git Gateway.`
 
-The first time you click the button the following message appears:
+- In order to enable `Identity service` and `Git Gateway` - revist Netlify.
 
-`Unable to access identity settings. When using git-gateway backend make sure to enable Identity service and Git Gateway.`
+- From the `Identity` tab in the admin, click `Enable Identity`.
 
-In order to enable `Identity service` and `Git Gateway` - revist Netlify.
+- Once enabled revisit the `admin` page of your app, give it a refresh, click `Login with Netlify Identity` and `Signup`.
 
-From the `Identity` tab in the admin, click `Enable Identity`.
-
-Once enabled revisit the `admin` page of your app, give it a refresh, click `Login with Netlify Identity` and `Signup`.
-
-Visit your email and click `Confirm you email address`.
+- Visit your email and click `Confirm you email address`.
 
 #### Git Gateway
 
@@ -167,11 +169,11 @@ You will also need to also configure Git Gateway. You may receive the following 
 
 `Your Git Gateway backend is not returning valid settings. Please make sure it is enabled.`
 
-From the `Settings` tab in Netlify, click `Identity` and scroll down to `Services` and click `Enable Git Gateway`.
+- From the `Settings` tab in Netlify, click `Identity` and scroll down to `Services` and click `Enable Git Gateway`.
 
-`Edit settings` and `generate access token in GitHub`. `Save`.
+- `Edit settings` and `generate access token in GitHub`. `Save`.
 
-At the same time, click the `Identity` tab and all being well, your email address should be listed as a `User`.
+- At the same time, click the `Identity` tab and all being well, your email address should be listed as a `User`.
 
 *NB. Sometimes this part of the process can be a bit temperamental. I found closing all instances of the live app in the browser, redeploying the app from Netlify and launching a fresh version helps.*
 
@@ -195,7 +197,6 @@ Update Cloudinary credentials in `public` - `admin` - `config.yml`
 ## Connect MailChimp to template
 
 Update link to MailChimp list in `src` - `App.js`
-
 
 Once live, please feel free to email [robin@reigatedelivers.com](mailto:robin@reigatedelivers.com) to let us all know your directory is live.
 
