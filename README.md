@@ -50,7 +50,7 @@ To get started you will need [Node.js](https://nodejs.org). You have a choice of
 
 Using the terminal, navigate to your app folder to start a local version of the app.
 
-##### Via npm
+### Via npm
 To install the necessary Node modules:
 
 ```npm install```
@@ -59,7 +59,7 @@ To install the necessary Node modules:
 
 **OR**
 
-##### Via Yarn
+### Via Yarn
 `yarn install` to install the necessary Node modules
 
 `yarn start` to start the server, available at `http://localhost:3000/`.
