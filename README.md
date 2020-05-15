@@ -67,26 +67,27 @@ http://localhost:3000/
 **OR**
 
 ### Via Yarn
-`yarn install` to install the necessary Node modules
+To install the necessary Node modules:
 
-`yarn start` to start the server, available at `http://localhost:3000/`.
+```
+yarn install
+```
+
+To start the server, and access: 
+
+```
+yarn start
+http://localhost:3000/
+```
 
 ***NB. I had to update my version of Node.js - to update on Mac/Catalina:***
 
-`nvm install node`
-
-Once installation is complete, launch the app locally via:
-
-`npm start` or `yarn start`
-
-A local version of your site shoudl be available: 
-
-`http://localhost:3000/`
-
+```
+nvm install node
+```
 
 ### Customisation
 Time to run through the files in the repo and update to your specific location. If you'd like to build on what we have created - go for it.
-
 
 ___
 
