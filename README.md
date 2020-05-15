@@ -207,10 +207,10 @@ Once live, please feel free to email [robin@reigatedelivers.com](mailto:robin@re
 
 I found the following websites super useful when working on this project:
 
-* Create React App: [www.create-react-app.de](https://create-react-app.dev)
+* Create React App: [www.create-react-app.dev](https://create-react-app.dev)
 * Create React App docs: [www.create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)
-* Netlify docs: [www.docs.netlify.com/](https://docs.netlify.com/).
-* Netlify CMS docs: [www.netlifycms.org/docs/](https://www.netlifycms.org/docs/)
+* Netlify docs: [www.docs.netlify.com](https://docs.netlify.com/)
+* Netlify CMS docs: [www.netlifycms.org/docs](https://www.netlifycms.org/docs/)
 * Netlify CMS + React Starter: [www.netlify-cms-react-starter.netlify.app](https://netlify-cms-react-starter.netlify.app)
 
 
