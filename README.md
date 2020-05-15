@@ -51,7 +51,9 @@ To get started you will need [Node.js](https://nodejs.org). You have a choice of
 Using the terminal, navigate to your app folder to start a local version of the app.
 
 ##### Via npm
-`npm install` to install the necessary Node modules. 
+To install the necessary Node modules:
+
+```npm install```
 
 `npm start` to start the server, available at `http://localhost:3000/`.
 
@@ -176,7 +178,7 @@ With access to Netlify CMS, you'll see you can add `Media` to the CMS. This won'
 
 
 ## Connect Cloudinary to template
-Cloudinary is currently the CDN ofchoice for Netlify CMS. We use it to store the images used for each listing header.
+Cloudinary is currently the CDN of choice for Netlify CMS. We use it to store the images used for each listing header.
 
 Update Cloudinary credentials in `public` - `admin` - `config.yml`
 
