@@ -53,9 +53,16 @@ Using the terminal, navigate to your app folder to start a local version of the 
 ### Via npm
 To install the necessary Node modules:
 
-```npm install```
+```
+npm install
+```
 
-`npm start` to start the server, available at `http://localhost:3000/`.
+To start the server, and access: 
+
+```
+npm start
+http://localhost:3000/
+```
 
 **OR**
 
