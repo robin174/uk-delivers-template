@@ -8,13 +8,13 @@ export const Nav = () => {
   return (
     <StyledNav role="navigation">
       <Button path="https://airtable.com/">
-        <span role="img" aria-label="List">📍</span> List your business
+        <span role="img" aria-label="List">📍</span>&nbsp;List your business
       </Button>
        <Button path="mailto:me@mytowndelivers.com">
-       <span role="img" aria-label="Email">📧</span> Email us
+       <span role="img" aria-label="Email">📧</span>&nbsp;&nbsp;Email us
        </Button>
        <Button path="https://www.facebook.com/mytowndelivers">
-       <span role="img" aria-label="Facebook">🙌</span> Follow on Facebook
+       <span role="img" aria-label="Facebook">🙌</span>&nbsp;&nbsp;Follow on Facebook
        </Button>
     </StyledNav>
   )
