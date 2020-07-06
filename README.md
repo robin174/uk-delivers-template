@@ -42,9 +42,7 @@ ___
 To start, let's get a base version of the app live locally.
 
 ## Download template
-Create a local folder for your app to live. You have two options with GitHub, either clone the repo (using the terminal) or download the Zip folder direct from the GitHub).
-
-*To add: clone repo process...*
+Create a local folder for your app to live. You have two options with GitHub, either clone the repo (using the terminal) or download the Zip folder direct from the GitHub.
 
 To get started you will need [Node.js](https://nodejs.org). You have a choice of package managers: [Node package manager (npm)](https://nodejs.org) or [Yarn](https://yarnpkg.com).
 
@@ -98,11 +96,19 @@ ___
 Once the app is available locally, let's get it online.
 
 ## Upload template to GitHub
-Create a new repository on your GitHub account.
+Create a new 'empty' repository on your GitHub account.
 
-*To add: upload process...*
+Navaigate to your app root folder and in the terminal:
 
-For the purposes of speed, we are currently working directly off `master`. Feel free to use a branch.
+```
+git init
+git add .
+git commit -am 'first commit'
+git remote add origin [new 'empty' repository url]
+git push -u origin master
+```
+
+For the purposes of speed, we are currently working directly off `master`. Feel free to use branches.
 
 ##### .gitignore
 A `.gitignore` file should be included in your repo. If not, make sure you have one in place, otherwise `node_modules` will be uploaded to your repo.
@@ -179,6 +185,15 @@ You will also need to also configure Git Gateway. You may receive the following 
 
 ***NB. Sometimes this part of the process can be a bit temperamental. I found closing all instances of the live app in the browser, redeploying the app from Netlify and launching a fresh version helps.***
 
+Alternatively, you can update the email templates that a user would receive when creating a new account on Netlify CMS.
+
+Alternative template files are saved `public/admin/templates`. To implement, in Netlify, `Settings` - `Identity` - `Emails`, update the `Path to template:` to 
+
+```
+/admin/templates/confirmation.html
+```
+
+Redeploy. For more help on this issue, the [Netlify Community](https://community.netlify.com/t/common-issue-netlify-cms-git-gateway-email-not-confirmed/10690) have you covered.
 
 If you visit the `/admin` of the app, it should automatically log you in if you've added your username and password.
 
